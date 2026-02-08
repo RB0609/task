@@ -44,7 +44,7 @@ cd ~/task/src
 ```
 c) Clone this repo
 ```
-git clone
+git clone https://github.com/RB0609/task.git
 ```
 d) Resolve dependencies
 ```
