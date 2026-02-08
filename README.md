@@ -1,28 +1,31 @@
 # task
-### Install Dependencies
-1) Install ROS 2 Jazzy
+### Requirements
+Tech: ROS2(Jazzy or any other) <br>
+OS: Ubuntu/Linux
+### Install ROS2 
+1) Install ROS 2 Jazzy Jalisco or any other of your choice
 Follow the official installation guide:
-- https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html
-
+- https://docs.ros.org/en/jazzy/Tutorials.html
 Make sure you can run:
 ```bash
 source /opt/ros/jazzy/setup.bash
 ros2 --help
 ```
-2) Since ROS 2 uses Python 3, please make sure that python3-numpy is installed, or install like this:
+### Install the dependencies
+1) Since ROS 2 uses Python 3, please make sure that python3-numpy is installed, or install like this:
 ```
 sudo apt install python3-numpy
 ```
-3) The cv_bridge python backend still has a dependency on python boost (equal or higher than 1.58.0), and install them as follows in Ubuntu:
+2) The cv_bridge python backend still has a dependency on python boost (equal or higher than 1.58.0), and install them as follows in Ubuntu:
 ```
 sudo apt install libboost-python-dev
 ```
-4) Install these for excel and csv, in order to save log data
+3) Install these for excel and csv, in order to save log data
 ```
 sudo apt install python3-pandas
 sudo apt install python3-yaml
 ```
-5) Install vision-opencv and cv-bridge
+4) Install vision-opencv and cv-bridge
 ```
 sudo apt-get install ros-jazzy-cv-bridge
 ```
@@ -30,8 +33,8 @@ sudo apt-get install ros-jazzy-cv-bridge
  sudo apt-get install ros-jazzy-vision-opencv
 ```
 # Building the project workspace and cloning the repo
-1. Build a directory and src folder and then Git clone this workspace
-a) source the directory
+1. Build a directory and src folder and then Git clone this workspace<br>
+a) source the directory<br>
 NOTE: replace {ROS} with your own ros distrubution, 
 ```
 source /opt/ros/{ROS}/setup.bash
@@ -58,7 +61,7 @@ colcon build --symlink-install
 source install/setup.bash
 ```
 # How to run this system
-1) Open your terminal and divide the terminal into two, one for Publisher and another for subscriber
+1) Open your terminal and divide the terminal into two, one for Publisher and another for subscriber<br>
 2) In the first terminal run this code<br>
 ```
 ros2 run planblue_pkg publisher
