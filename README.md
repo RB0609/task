@@ -36,7 +36,7 @@ sudo apt install python3-yaml
 sudo apt-get install ros-jazzy-cv-bridge
 ```
 ```
- sudo apt-get install ros-jazzy-vision-opencv
+sudo apt-get install ros-jazzy-vision-opencv
 ```
 # Building the project workspace and cloning the repo
 a) source the directory<br>
