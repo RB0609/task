@@ -39,7 +39,6 @@ sudo apt-get install ros-jazzy-cv-bridge
  sudo apt-get install ros-jazzy-vision-opencv
 ```
 # Building the project workspace and cloning the repo
-1. Build a directory and src folder and then Git clone this workspace <br>
 a) source the directory<br>
 ```
 source /opt/ros/jazzy/setup.bash
@@ -61,7 +60,7 @@ source install/setup.bash
 ```
 # How to run this system
 1) open the new terminal and divide the terminal into two, one for Publisher and another for subscriber<br>
-2) In the first terminal run this code<br>
+2) In the first terminal run this code. Ignore, if you done it already<br>
 ```
 cd ~/task
 colcon build --symlink-install
@@ -82,7 +81,7 @@ Below is the commad line, which we have to run after building and sourcing our w
 ros2 run planblue_pkg subscriber
 ```
 # Where the output files save
-Output files are saved in your home directory under two folders:
+Output files are saved in your home directory under these two folder names:
 1) publisher_captures
 2) subscriber_captures
 # Working Demo 
