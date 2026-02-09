@@ -39,7 +39,7 @@ sudo apt-get install ros-jazzy-cv-bridge
  sudo apt-get install ros-jazzy-vision-opencv
 ```
 # Building the project workspace and cloning the repo
-1. Build a directory and src folder and then Git clone this workspace<br>
+1. Build a directory and src folder and then Git clone this workspace <br>
 a) source the directory<br>
 ```
 source /opt/ros/jazzy/setup.bash
