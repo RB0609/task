@@ -44,21 +44,16 @@ a) source the directory<br>
 ```
 source /opt/ros/jazzy/setup.bash
 ```
-b) create a new directory
-```
-mkdir -p ~/task/src
-cd ~/task/src
-```
-c) Clone this repo
+b) Clone this repo
 ```
 git clone https://github.com/RB0609/task.git
 ```
-d) Resolve dependencies
+c) Resolve dependencies
 ```
 cd ~/task
 rosdep install --from-paths src -i -y
 ```
-e) Build and source the workspace
+d) Build and source the workspace
 ```
 cd ~/task
 colcon build --symlink-install
