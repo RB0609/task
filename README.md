@@ -9,7 +9,7 @@ for macOS users, it is recommended to follow this installation guide: [link](htt
 1. ROS2 Jazzy Jalisco <br>
 2. Ubuntu 24.04 <br>
 3. Laptop with camera or webcam <br>
-### Install ROS2 
+### Source ROS2 environment
 1) After installing, Make sure you can run this:
 ```bash
 source /opt/ros/jazzy/setup.bash
@@ -37,7 +37,7 @@ sudo apt-get install ros-jazzy-cv-bridge
 sudo apt-get install ros-jazzy-vision-opencv
 ```
 # Building the project workspace and cloning the repo
-a) source the directory<br>
+a) source ROS2 environment<br>
 ```
 source /opt/ros/jazzy/setup.bash
 ```
@@ -57,7 +57,7 @@ colcon build --symlink-install
 source install/setup.bash
 ```
 # How to run this system
-1) open a new terminal and divide the terminal into two, one for Publisher and another for subscriber<br>
+1) open a new terminal and divide the terminal into two(ctrl+shift+E), one for Publisher and another for subscriber<br>
 2) In the first terminal run this code. Ignore, if you've done it already<br>
 ```
 cd ~/task
