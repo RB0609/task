@@ -1,6 +1,6 @@
-# Task: This repo contains the code of two nodes that communicate with each other to capture and save image with timestamp
+# Task: This repo contains the code of two nodes that communicate with each other to capture and save images with timestamp
 ### NOTE: This repo is explicitly for ros2 jazzy jalisco + ubuntu 24.04.<br>
-If you want to use this repo, it is recommended to use ros2 jalisco + ubuntu 24.04. <br>
+If you want to use this repo, it is recommended to install ros2 jalisco + ubuntu 24.04, follow this installation guide: [link](https://docs.ros.org/en/jazzy/Tutorials.html)<br>
 For other ros2 distro users, you can install ros2 jazzy via docker, follow this installation guide: [link](https://docs.ros.org/en/jazzy/How-To-Guides/Run-2-nodes-in-single-or-separate-docker-containers.html) <br>
 for windows users, it is recommended to follow this installation guide: [link](https://docs.ros.org/en/jazzy/Installation/Alternatives/Windows-Development-Setup.html) <br>
 for macOS users, it is recommended to follow this installation guide: [link](https://docs.ros.org/en/jazzy/Installation/Alternatives/macOS-Development-Setup.html) <br>
@@ -10,9 +10,7 @@ for macOS users, it is recommended to follow this installation guide: [link](htt
 2. Ubuntu 24.04 <br>
 3. Laptop with camera or webcam <br>
 ### Install ROS2 
-1) Install ROS 2 Jazzy Jalisco<br>
-Follow the official installation guide: [link](https://docs.ros.org/en/jazzy/Tutorials.html)<br>
-Make sure you can run:
+1) After installing, Make sure you can run this:
 ```bash
 source /opt/ros/jazzy/setup.bash
 ros2 --help
@@ -59,14 +57,14 @@ colcon build --symlink-install
 source install/setup.bash
 ```
 # How to run this system
-1) open the new terminal and divide the terminal into two, one for Publisher and another for subscriber<br>
-2) In the first terminal run this code. Ignore, if you done it already<br>
+1) open a new terminal and divide the terminal into two, one for Publisher and another for subscriber<br>
+2) In the first terminal run this code. Ignore, if you've done it already<br>
 ```
 cd ~/task
 colcon build --symlink-install
 source install/setup.bash
 ```
-below is the command line for publisher node, which we have to run after building and sourcing our workspace<br>
+below is the command line for publisher node, which we've to run after building and sourcing workspace<br>
 ```
 ros2 run planblue_pkg publisher
 ```
@@ -76,7 +74,7 @@ cd ~/task
 colcon build --symlink-install
 source install/setup.bash
 ```
-Below is the commad line, which we have to run after building and sourcing our workspace<br>
+Below is the command line, which we've to run after building and sourcing workspace<br>
 ```
 ros2 run planblue_pkg subscriber
 ```
