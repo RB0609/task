@@ -82,6 +82,25 @@ ros2 run planblue_pkg subscriber
 Output files are saved in your home directory with these folder names:
 1) publisher_captures
 2) subscriber_captures
+# Quick check
+run these command lines, in your terminal to check if you've installed all dependencies correctly
+```
+python3 -c "import rclpy; print('rclpy OK')"
+python3 -c "import cv2; print('opencv OK', cv2.__version__)"
+python3 -c "from cv_bridge import CvBridge; print('cv_bridge OK', CvBridge)"
+python3 -c "import pandas as pd; print('pandas OK', pd.__version__)"
+python3 -c "import openpyxl; print('openpyxl OK', openpyxl.__version__)"
+
+```
+you should expect these outputs, if not that particular dependency is missing.
+```
+rclpy OK
+opencv OK 4.6.0
+cv_bridge OK <class 'cv_bridge.core.CvBridge'>
+pandas OK 2.1.4
+openpyxl OK 3.1.2
+
+```
 # Working Demo 
 
 
