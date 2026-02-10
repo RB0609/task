@@ -1,14 +1,14 @@
-# Task: This repo contains the code of a distributed system with two nodes that communicate with each other
+# Task: This repo contains the code of two nodes that communicate with each other to capture and save image with timestamp
 ### NOTE: This repo is explicitly for ros2 jazzy jalisco + ubuntu 24.04.<br>
 If you want to use this repo, it is recommended to use ros2 jalisco + ubuntu 24.04. <br>
 For other ros2 distro users, you can install ros2 jazzy via docker, follow this installation guide: [link](https://docs.ros.org/en/jazzy/How-To-Guides/Run-2-nodes-in-single-or-separate-docker-containers.html) <br>
 for windows users, it is recommended to follow this installation guide: [link](https://docs.ros.org/en/jazzy/Installation/Alternatives/Windows-Development-Setup.html) <br>
 for macOS users, it is recommended to follow this installation guide: [link](https://docs.ros.org/en/jazzy/Installation/Alternatives/macOS-Development-Setup.html) <br>
 
-### Requirements
-Tech: ROS2(Jazzy or any other) <br>
-OS: Ubuntu/Linux <br>
-Laptop with cam or webcam <br>
+### System Requirements
+1. ROS2 Jazzy Jalisco <br>
+2. Ubuntu 24.04 <br>
+3. Laptop with camera or webcam <br>
 ### Install ROS2 
 1) Install ROS 2 Jazzy Jalisco<br>
 Follow the official installation guide: [link](https://docs.ros.org/en/jazzy/Tutorials.html)<br>
@@ -66,7 +66,7 @@ cd ~/task
 colcon build --symlink-install
 source install/setup.bash
 ```
-below is the command line, which we have to run after building and sourcing our workspace<br>
+below is the command line for publisher node, which we have to run after building and sourcing our workspace<br>
 ```
 ros2 run planblue_pkg publisher
 ```
@@ -81,7 +81,7 @@ Below is the commad line, which we have to run after building and sourcing our w
 ros2 run planblue_pkg subscriber
 ```
 # Where the output files save
-Output files are saved in your home directory under these two folder names:
+Output files are saved in your home directory with these folder names:
 1) publisher_captures
 2) subscriber_captures
 # Working Demo 
