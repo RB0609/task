@@ -1,4 +1,4 @@
-# Task: This repo contains the code of a istributed system with two nodes that communicate with each other.
+# Task: This repo contains the code of a distributed system with two nodes that communicate with each other
 ### NOTE: This repo is explicitly for ros2 jazzy jalisco + ubuntu 24.04.<br>
 If you want to use this repo, it is recommended to use ros2 jalisco + ubuntu 24.04. <br>
 For other ros2 distro users, you can install ros2 jazzy via docker, follow this installation guide: [link](https://docs.ros.org/en/jazzy/How-To-Guides/Run-2-nodes-in-single-or-separate-docker-containers.html) <br>
